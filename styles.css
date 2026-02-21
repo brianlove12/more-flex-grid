@@ -1,5 +1,8 @@
 /*
-    Name: 
+    Name: Brian Love
+    Course: GIT215 - Intro to Web Authoring
+    Assignment: M5 - More Flex and Grid Practice
+    Date: 2/19/2026
 */
 
 :root{
@@ -74,6 +77,10 @@ header{
     background-size: contain;
     /* Styles were added here to arrange the content, I used flexbox */
     /* TO DO */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 2rem;
 }
 
 /* For All Headings */
@@ -137,6 +144,10 @@ nav ul{
     padding: 0;
     /* Styles were added here to arrange the content, I used flexbox */
     /* TO DO */
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 1rem;
 }
 
 nav a{
@@ -165,6 +176,8 @@ nav a span{
     position: relative;
     /* Styles were added here to arrange the content, I used top and z-index for this */
     /* TO DO */
+    top: -70px;
+    z-index: 1;
 }
 
 nav a:focus{
@@ -224,17 +237,25 @@ p{
     padding: 96px 32px;
     /* Styles were added here to arrange the content, I used grid */
     /* TO DO */
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 32px;
 }
 
 #plants h3, #plants > p{
     /* Styles were added here to arrange the content, these are grid children styles */
     /* TO DO */
+    grid-column: 1 / -1;
 }
 
 #plants section{
     /* Styles were added here to arrange the content, I used flexbox */
     /* TO DO */
     margin: 32px auto 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
 }
 
 #plants h4{
@@ -247,6 +268,7 @@ p{
     width: 100%;
     max-width: 400px;
     height: auto;
+    order: -1;
 }
 
 .price{
@@ -265,12 +287,16 @@ p{
     padding: 64px 32px;
     /* Styles were added here to arrange the content, I used grid */
     /* TO DO */
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 32px;
 }
 
 /* Contact Heading and Paragraph */
 #contact h3, #contact > p{
     /* Styles were added here to arrange the content, these are grid children styles */
     /* TO DO */
+    grid-column: 1 / -1;
 }
 
 /* Contact text color */
@@ -361,12 +387,18 @@ th:nth-of-type(even), td:nth-of-type(even){
     margin: 16px auto;
     list-style-type: none;
     padding: 0;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 16px;
+    justify-items: center;
+    align-items: center;
 }
 
 /* Heading for Social Media Section */
 #social h4{
     /* Styles were added here to arrange the content, these are grid children styles */
     /* TO DO */
+    text-align:center;
 }
 
 #social a{
